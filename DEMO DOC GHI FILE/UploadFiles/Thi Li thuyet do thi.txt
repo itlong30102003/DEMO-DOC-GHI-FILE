@@ -1,0 +1,36 @@
+THI LÝ THUYẾT ĐỒ THỊ
+
+VẼ:
+ĐỒ THỊ ĐẦY ĐỦ K2, K3  
+ĐỒ THỊ 2 PHÍA,DẠNG ĐẦY ĐỦ K2,3 K3,3
+ĐỒ THỊ BÁNH XE : W3 4 ĐỈNH
+ĐỒ THỊ LẬP PHƯƠNG 
+ĐỒ THỊ CON (Subgraphs): g -> h1 ,h2
+
+ma trận kề 1 0
+danh sách kề: danh sách giữa các đỉnh và cạnh (e, num)
+
+KIỂM TRA , XÁC ĐỊNH:
+ĐỒ THỊ ĐẲNG CẤU (Isomorphism) cùng số đỉnh , cùng số cạnh , cùng số bậc của đỉnh
+
+Connectivity-path s = sprt((x1-x2)^2 +(y1-y2)^2) liên thồng mạch trong đồ thị 
+liên thông mạnh, yếu: xét hướng vào ra của các đỉnh
+
+Xác định đỉnh cắt (cut edge) và cạnh cầu, cạnh cắt(cut vertex).
+
+CHO ĐỒ THỊ 'G ' KIỂM TRA CCOI CÓ PHẢI ĐỒ THỊ EULER HAY HAMINTON 
+liệt kê các chu trình, đường đi
+tìm chu trình ngắn nhất ( ghi các bước )
+	
+
+BFS & DFS 
+BFS= 1,2,4,10,6,7,11,12,13,5,3,8,9
+DFS= 1,2,4,6,13,5,8,9,7,3,10,11,12
+
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ifstream input("bacdinh.out");
+    if (!input.is_open()) {
+        cerr << "Error: Unable to open input file." << endl;
+        return 1;
+    }

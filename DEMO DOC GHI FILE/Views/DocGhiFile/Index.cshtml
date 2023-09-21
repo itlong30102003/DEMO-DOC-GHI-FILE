@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="/DocGhiFile/Save" method="post">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">MaSV</label>
+        <input type="text" class="form-control" name="MaSV" aria-describedby="emailHelp" value=@ViewBag.MaSV>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">HoTenSV</label>
+        <input type="text" class="form-control" name="HoTenSV" value=@ViewBag.HoTenSV>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">DiemSo</label>
+        <input type="number" class="form-control" name="DiemSo" value=@ViewBag.DiemSo>
+    </div>
+    <button type="submit" class="btn btn-primary">GhiFile</button>
+    <a href="@Url.Action("Open","DocGhiFile")" type="submit" class="btn btn-primary">DocFile</a>
+    <div>
+        @ViewBag.KetQua
+    </div>
+</form>

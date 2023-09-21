@@ -1,0 +1,27 @@
+﻿@Model IEnumerable<DEMO_DOC_GHI_FILE.Models.MailInfo>
+@{
+
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<form action="/Email/Send" method="post">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">From</label>
+        <input type="text" class="form-control" name="Form" aria-describedby="emailHelp" value=@ViewBag.MaSV>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">To</label>
+        <input type="text" class="form-control" name="To" value=@ViewBag.HoTenSV>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Subject</label>
+        <input type="number" class="form-control" name="Subject" value=@ViewBag.DiemSo>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Body</label>
+        <textarea class="form-control" name="Body" rows="3"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>

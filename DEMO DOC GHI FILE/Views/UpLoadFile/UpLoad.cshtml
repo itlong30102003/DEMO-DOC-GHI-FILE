@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewBag.Title = "UpLoad";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Kết quả UpLoad</h2>
+<div>
+    Hình ảnh
+    <img src="~/UploadFiles/@ViewBag.FileNameImage" class="img-thumbnail" style="width: auto ; height: auto"/>
+
+</div>
+<div>
+    Tai lieu
+    <ul>
+        <li>@ViewBag.FileName</li>
+        <li>@ViewBag.FileStyle</li>
+        <li>@ViewBag.FileSize</li>
+        <li>
+            <a href="~UploadFiles/@ViewBag.FileName">DownLoad</a>
+        </li>
+    </ul>
+</div>
